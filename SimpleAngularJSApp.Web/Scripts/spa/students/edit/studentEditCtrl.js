@@ -9,6 +9,11 @@
 
         $scope.pageClass = 'container';
         $scope.editStudent = editStudent;
+        // for datetime picker
+        $scope.dateOptions = {
+            formatYear: 'yy',
+            startingDay: 1
+        };
 
         function editStudent() {
             $http.post("api/student/edit", $scope.student)
@@ -23,6 +28,7 @@
             $http.get("api/student/edit/" + $routeParams.id, $scope.student)
                 .then(function (result) {
                     $scope.student = result.data;
+                    $scope.student.BirthDate = new Date(result.data.BirthDate);
                 }, function (response) {
 
                 });
