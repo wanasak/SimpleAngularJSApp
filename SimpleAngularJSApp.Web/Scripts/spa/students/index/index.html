@@ -1,0 +1,25 @@
+﻿<h3>Students</h3>
+
+<a class="btn btn-default" href="#/student/add">Add</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="student in students">
+            <td>{{ student.FirstName }}</td>
+            <td>{{ student.LastName }}</td>
+            <td>
+                <a href="#/student/detail/{{ student.ID }}">Detail</a> |
+                <a href="#/student/edit/{{ student.ID }}">Edit</a> |
+                <a href="javascript:" ng-click="deleteStudent($index, student.ID)">Delete</a>
+            </td>
+        </tr>
+        
+    </tbody>
+</table>

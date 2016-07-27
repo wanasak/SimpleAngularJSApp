@@ -1,0 +1,15 @@
+﻿<h3>Student Detail</h3>
+
+<a class="btn btn-default" href="#/">Back</a>
+
+<div>
+    <dl>
+        <dt>First Name<dt>
+        <dd>{{ student.FirstName }}</dd>
+        <dt>Last Name<dt>
+        <dd>{{ student.LastName }}</dd>
+        <dt>BirthDate<dt>
+        <dd>{{ student.BirthDate | date:'MMMM d, y' }}</dd>
+    </dl>
+</div>
+

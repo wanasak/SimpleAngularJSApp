@@ -1,0 +1,20 @@
+﻿<h3>Add New Student</h3>
+
+<form role="form" name="addStudentForm" novalidate angular-validator angular-validator-submit="addStudent()">
+    <div class="form-group">
+        <label for="firstname">First Name:</label>
+        <input ng-model="student.FirstName" type="text" class="form-control" id="firstname" name="firstname" validate-on="blur" required>
+    </div>
+    <div class="form-group">
+        <label for="lastname">Last Name:</label>
+        <input ng-model="student.LastName" type="text" class="form-control" id="lastname" name="lastname" validate-on="blur" required>
+    </div>
+    <div class="form-group">
+        <label for="birthdate">Birth Date:</label>
+        <p class="input-group">
+            <input type="date" class="form-control" datepicker-popup ng-model="student.BirthDate" is-open="false" min-date="'1980-01-01'" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+        </p>
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+    <a class="btn btn-default" href="#/">Back</a>
+</form>

@@ -1,0 +1,14 @@
+﻿<h3>Edit Student</h3>
+
+<form role="form" name="addStudentForm" novalidate angular-validator angular-validator-submit="editStudent()">
+    <div class="form-group">
+        <label for="firstname">First Name:</label>
+        <input ng-model="student.FirstName" type="text" class="form-control" id="firstname" name="firstname" validate-on="blur" required>
+    </div>
+    <div class="form-group">
+        <label for="lastname">Last Name:</label>
+        <input ng-model="student.LastName" type="text" class="form-control" id="lastname" name="lastname" validate-on="blur" required>
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+    <a class="btn btn-default" href="#/">Back</a>
+</form>
