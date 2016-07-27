@@ -1,5 +1,5 @@
 # SimpleAngularJSApp
-Simple CRUD AngularJS Application + ASP.NET Web API 2
+Simple CRUD AngularJS Application + ASP.NET Web API 2 + Entity Framework 6
 
 Installation instructors
 
