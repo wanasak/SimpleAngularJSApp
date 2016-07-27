@@ -7,7 +7,7 @@ Installation instructors
 
 2. Change a connection string inside SimpleAngularJSApp.Data/app.config and SimpleAngularJSApp.Web/web.config
 
-3. Open package manager console and select SimpleAngularJSApp as default project
+3. Open package manager console and select SimpleAngularJSApp.Data as default project
 
 4. Run the following commands
   >> add-migration initial
