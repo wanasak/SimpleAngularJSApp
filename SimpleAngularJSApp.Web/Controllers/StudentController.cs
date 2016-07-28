@@ -56,7 +56,7 @@ namespace SimpleAngularJSApp.Web.Controllers
                         FirstName = s.FirstName,
                         LastName = s.LastName,
                         BirthDate = s.BirthDate
-                    }).SingleOrDefault();
+                    }).FirstOrDefault();
 
                 response = request.CreateResponse(HttpStatusCode.OK, student);
 
@@ -79,7 +79,7 @@ namespace SimpleAngularJSApp.Web.Controllers
                         FirstName = s.FirstName,
                         LastName = s.LastName,
                         BirthDate = s.BirthDate
-                    }).SingleOrDefault();
+                    }).FirstOrDefault();
 
                 response = request.CreateResponse(HttpStatusCode.OK, student);
 
